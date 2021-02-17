@@ -245,7 +245,7 @@ const deleteFromDatabasebyId = (modelType, id) => {
   }
   let index = model.data.findIndex((element) => {
     return element.id === id;
-  });
+  }); 
   if (index !== -1) {
     model.data.splice(index, 1);
     return true;
